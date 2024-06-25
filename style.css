@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'cartoon';
+    src: url(fonts/Bing\ Bam\ Boum.ttf);
+}
+@font-face {
+    font-family: 'just-like-this';
+    src: url(fonts/Just\ Like\ This.ttf);
+}
+@font-face {
+    font-family: 'heycomic';
+    src: url(fonts/Hey\ Comic.ttf);
+}
+body{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(50, 48, 48);
+    cursor: url('/Jerry-cursor.png'), auto;
+    background-image: url('/bg.jpeg');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'cartoon', fantasy;
+    font-weight: lighter;
+    font-size: 50px;
+    /* margin-bottom: 20px; */
+    margin: 20px auto;
+}
+h2{
+    margin-top: 0;
+    font-family: 'heycomic', fantasy;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.heading{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding: 5px;
+}
+#board{
+    cursor: url("Jerry-cursor.png"), pointer;
+}
+#board{
+    width: 540px;
+    height: 540px;
+    /* background-color: aqua ; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/garden.jpeg');
+    background-size: cover;
+    border: 4px solid antiquewhite;
+    border-radius: 30px;
+    /* cursor: url('/Jerry-cursor.png'), auto; */
+}
+
+#board div{
+    width: 180px;
+    height: 180px;
+    max-width: 50%;
+    max-height: 50%;
+    background-image: url('/cbarrel-1.png');
+    background-size: cover;
+}
+
+#board div img{
+    width: 200px;
+    height: 200px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 40px;
+    }  
+    img{
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        padding: 15px;
+    } 
+    h2{
+        font-size: 19px;
+        text-align: center;
+    }
+    
+}
